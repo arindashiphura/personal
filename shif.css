@@ -1,0 +1,280 @@
+/* Reset default styles and set basic layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul.horizontal-nav {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav ul.horizontal-nav li {
+    display: inline;
+    margin-right: 30px; /* Adjust spacing between menu items */
+}
+
+nav ul.horizontal-nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul.horizontal-nav li a:hover {
+    background-color: #555;
+}
+
+/* Reset some default styles for the navbar */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+/* Centering and styling the sliding text container */
+.sliding-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliding-text {
+    font-size: 2em;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.sliding-text.active {
+    opacity: 1;
+}
+
+/* Centering and styling the sliding image container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sliding-image-container {
+    position: relative;
+    width: 500px; /* Adjust width as per your image size */
+    height: 400px; /* Adjust height as per your image size */
+    overflow: hidden;
+}
+
+.sliding-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slideImage 10s linear infinite; /* Adjust animation duration (10s) as needed */
+}
+
+@keyframes slideImage {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust percentage for slide distance */
+   /}
+}
+
+
+
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 150%;
+    background-image: url('image/WhatsApp\ Image\ 2024-07-08\ at\ 10.40.41_88431bf4.jpg'); /* This is where the image is referenced */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: rotateBackground 20s linear infinite;
+}
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+    33.33% {
+        transform: rotate(360deg);
+    }
+    66.66% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+#work-experience {
+    background-color: #f2f2f2;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-align, .right-align {
+    width: 45%;
+}
+
+.left-align h2, .right-align h2 {
+    color: #333;
+}
+
+.left-align p, .right-align p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
